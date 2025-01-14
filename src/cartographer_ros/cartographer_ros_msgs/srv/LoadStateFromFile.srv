@@ -1,0 +1,4 @@
+string file_path
+bool load_frozen_state
+---
+cartographer_ros_msgs/StatusResponse status

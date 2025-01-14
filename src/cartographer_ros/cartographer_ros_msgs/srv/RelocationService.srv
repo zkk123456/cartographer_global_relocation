@@ -1,0 +1,3 @@
+float32 min_score
+---
+geometry_msgs/Pose new_pose
