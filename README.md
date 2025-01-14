@@ -1,2 +1,2 @@
 # cartographer_global_relocation
-实现cartographer重定位功能，，目前已经测试能够实现在6米180度范围内的全局重定位。
+实现cartographer重定位功能，目前已经测试能够实现在6米180度范围内的全局重定位。
