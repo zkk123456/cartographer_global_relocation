@@ -1,6 +1,20 @@
-# cartographer_global_relocation
-实现cartographer重定位功能，目前已经测试能够实现在6米180度范围内的全局重定位。
+@[TOC](cartographer全局重定位的实现)
+#  0.使用说明
+   由于cartographerr_ros中提供了relocation的服务，因此可以通过以下命令实现重定位功能；	
+	
+	
+客户端：
 
+```
+ros2 topic pub /beefast/navigation std_msgs/msg/String data:\ \'relocation\'\  --once
+```
+
+RelocationService.srv 数据结构定义：
+```
+float32 min_score
+---
+geometry_msgs/Pose new_pose
+```
 
 #  1.简介
 
@@ -136,3 +150,4 @@ bool PoseGraph2D::PerformGlobalLocalization(cartographer::sensor::PointCloud las
     LOG(INFO) << "PoseGraph2D::PerformGlobalLocalization end.";
     return true;
 }
+```
